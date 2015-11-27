@@ -20,9 +20,7 @@
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.device"/>
-  <gap:plugin name="nl.x-services.plugins.launchmyapp">
-    <param name="URL_SCHEME" value="apkbee" />
-</gap:plugin>
+
 
 <gap:plugin name="com.machenmusik.plugins.launchmyapp">
     <param name="URL_SCHEME" value="apkbee" />
