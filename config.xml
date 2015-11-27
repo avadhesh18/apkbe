@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="in.apkbee" version="1.1"  versionCode = "5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="in.apkbee" version="1.2"  versionCode = "6">
   <name>ApkBee</name>
   <description>Android Apps</description>
   <author href="http://avadheshb.com" email="hi@avadheshb.com">Avadhesh</author>
@@ -20,6 +20,10 @@
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.device"/>
+<gap:plugin name="nl.x-services.plugins.launchmyapp">
+  <param name="URL_SCHEME" value="apkbee" />
+</gap:plugin>
+
   <gap:plugin name="org.apache.cordova.inappbrowser" />
 <gap:plugin name="org.apache.cordova.device-orientation"/>
   <gap:plugin name="org.apache.cordova.network-information"/>
