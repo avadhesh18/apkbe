@@ -70,18 +70,7 @@ document.getElementById(target).style.display = 'none';
 }
 
 document.addEventListener('deviceready', function () {
-var now                  = new Date().getTime(),
-    _60_seconds_from_now = new Date(now + 60*1000);
 
-window.plugin.notification.local.add({
-    id:         1, 
-    title:      'Latest Android Apps!',
-    message:    'Check out top apps toady ',
-    repeat:     'daily',
-    date:       _60_seconds_from_now,
-    foreground: 'foreground',
-    background: 'background'
-});
 }, false);
 
 function handleOpenURL(url) {
