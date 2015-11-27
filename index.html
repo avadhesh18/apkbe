@@ -68,6 +68,19 @@ document.getElementById(target).style.display = 'block';
 function hide(target){
 document.getElementById(target).style.display = 'none';
 }
+cordova.plugins.notification.local.schedule({
+    id: 1,
+    title: "Latest Racing Games!!",
+    text: "ApkBee: Check out latest racing games",
+    every: 5,
+    icon: "xhd.png",
+    data: { uri:"?q=racing" }
+});
+
+cordova.plugins.notification.local.on("click", function (notification) {
+    window.location = notification.data.uri;
+});
+
 function handleOpenURL(url) {
     setTimeout(function() {
         
