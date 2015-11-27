@@ -13,20 +13,7 @@ document.addEventListener("touchstart", function(){}, true);
   function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
     }
-      function onDeviceReady() {
-function handleOpenURL(url) {
  
-    setTimeout(function() {
-    alert("received url: " + url);
-  }, 0);
-  
-  if (url !== '') {
-    var p  = url.replace("72-c", "90-c"); 
-      window.location = p; 
-  }
-}
-handleOpenURL(url);
-}
 </script>
 </head>
 <body>
@@ -81,7 +68,13 @@ document.getElementById(target).style.display = 'block';
 function hide(target){
 document.getElementById(target).style.display = 'none';
 }
-
+function handleOpenURL(url) {
+    setTimeout(function() {
+        // Remove the scheme
+        invokeURL = url.replace("aixapp://", "");
+        window.location = "" + invokeURL;
+    }, 0);
+}
 
 </script>
 
