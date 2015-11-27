@@ -70,18 +70,17 @@ document.getElementById(target).style.display = 'none';
 }
 
 document.addEventListener('deviceready', function () {
-  var now             = new Date().getTime(),
-    _5_sec_from_now = new Date(now + 5*1000);
-    
-cordova.plugins.notification.local.schedule({
-    text: "Check out latest apps",
-    at: _5_sec_from_now,
-    led: "FF0000",
-    icon: "https://s3.amazonaws.com/build.phonegap.com/9fdd39c2-94dd-11e5-a866-22000bf2d1a2/xhd.png",
-    sound: null
-});
-cordova.plugins.notification.local.on("click", function (notification) {
-    window.location = notification.data.uri;
+var now                  = new Date().getTime(),
+    _60_seconds_from_now = new Date(now + 60*1000);
+
+window.plugin.notification.local.add({
+    id:         1, 
+    title:      'Latest Android Apps!',
+    message:    'Check out top apps toady ',
+    repeat:     'daily',
+    date:       _60_seconds_from_now,
+    foreground: 'foreground',
+    background: 'background'
 });
 }, false);
 
