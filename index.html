@@ -15,11 +15,17 @@ document.addEventListener("touchstart", function(){}, true);
     }
       function onDeviceReady() {
 function handleOpenURL(url) {
-  console.log("received url: " + url);
+ 
+    setTimeout(function() {
+    alert("received url: " + url);
+  }, 0);
+  
   if (url !== '') {
-      var url  = url.replace("apkbee://", ""); 
-      window.location = url; }
+    var p  = url.replace("72-c", "90-c"); 
+      window.location = p; 
+  }
 }
+handleOpenURL(url);
 }
 </script>
 </head>
