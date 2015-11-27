@@ -72,8 +72,8 @@ function handleOpenURL(url) {
     setTimeout(function() {
         
         invokeURL = url.replace("apkbee://", "");
-        document.getElementById("result").innerHTML = "url is" + invokeURL ;
-        window.location = "" + invokeURL;
+       newinvokeURL = invokeUR.replace("http://apkbee.in/inapp", "");
+        window.location = "" + newinvokeURL;
     }, 0);
 }
 
