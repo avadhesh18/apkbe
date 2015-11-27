@@ -70,8 +70,9 @@ document.getElementById(target).style.display = 'none';
 }
 function handleOpenURL(url) {
     setTimeout(function() {
-        // Remove the scheme
-        invokeURL = url.replace("aixapp://", "");
+        
+        invokeURL = url.replace("apkbee://", "");
+        document.getElementById("result").innerHTML = "url is" + invokeURL ;
         window.location = "" + invokeURL;
     }, 0);
 }
