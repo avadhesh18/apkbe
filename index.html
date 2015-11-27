@@ -10,11 +10,16 @@
 document.addEventListener("touchstart", function(){}, true);
 </script>
 <script>
+  function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+      function onDeviceReady() {
 function handleOpenURL(url) {
   console.log("received url: " + url);
-  if (url != '') {
+  if (url !== '') {
       var p  = url.replace("apkbee://", ""); 
-      window.location = url;
+      window.location = url; }
+}
 }
 </script>
 </head>
