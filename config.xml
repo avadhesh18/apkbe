@@ -24,6 +24,8 @@
     <param name="URL_SCHEME" value="apkbee" />
     <param name="HTTP_HOST" value="apkbee.in" />
     <param name="HTTP_PATHPREFIX" value="/inapp" />
+    <param name="HTTPS_HOST" value="apkbee.in" />
+    <param name="HTTPS_PATHPREFIX" value="/inapp" />
 </gap:plugin>
 
 
