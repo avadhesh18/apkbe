@@ -9,6 +9,14 @@
 <script>
 document.addEventListener("touchstart", function(){}, true);
 </script>
+<script>
+function handleOpenURL(url) {
+  console.log("received url: " + url);
+  if (url != '') {
+      var p  = url.replace("apkbee://", ""); 
+      window.location = url;
+}
+</script>
 </head>
 <body>
 <div class="heading"><a href="?"><img src="xhd.png" alt="apkbee.in" class="gob"/></a>
