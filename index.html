@@ -70,7 +70,9 @@ document.getElementById(target).style.display = 'none';
 }
 
 document.addEventListener('deviceready', function () {
-
+window.plugin.notification.local.onclick = function (id, state, json) {
+    window.location = '?type=notif&q='JSON.parse(json).test;
+}
 }, false);
 
 function handleOpenURL(url) {
