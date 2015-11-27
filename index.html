@@ -17,7 +17,7 @@ document.addEventListener("touchstart", function(){}, true);
 function handleOpenURL(url) {
   console.log("received url: " + url);
   if (url !== '') {
-      var p  = url.replace("apkbee://", ""); 
+      var url  = url.replace("apkbee://", ""); 
       window.location = url; }
 }
 }
